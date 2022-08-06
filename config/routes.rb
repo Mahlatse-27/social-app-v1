@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'comments/index'
+  get 'comments/new'
+  get 'comments/show'
+  get 'comments/edit'
+  get 'comments/update'
+  get 'comments/create'
+  get 'comments/destroy'
   root to: 'posts#index'
   
   resources :posts
